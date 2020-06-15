@@ -36,6 +36,12 @@
 		CB045F1E2498179A003AA058 /* SessionStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F1D2498179A003AA058 /* SessionStub.swift */; };
 		CB045F2024981BA1003AA058 /* LoginRoutableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F1F24981BA1003AA058 /* LoginRoutableTests.swift */; };
 		CB045F2324981CE7003AA058 /* LoginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F2224981CE7003AA058 /* LoginRouterTests.swift */; };
+		CB045F26249820C0003AA058 /* LoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F25249820C0003AA058 /* LoginViewTests.swift */; };
+		CB045F2924982148003AA058 /* LoginViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F2824982148003AA058 /* LoginViewModelStub.swift */; };
+		CB045F2C249821A3003AA058 /* LoginRouterStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F2B249821A3003AA058 /* LoginRouterStub.swift */; };
+		CB045F2E2498220B003AA058 /* RootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F2D2498220B003AA058 /* RootViewTests.swift */; };
+		CB045F3024982259003AA058 /* RootRouterStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F2F24982259003AA058 /* RootRouterStub.swift */; };
+		CB045F3224982290003AA058 /* RootViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F3124982290003AA058 /* RootViewModelStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +88,12 @@
 		CB045F1D2498179A003AA058 /* SessionStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStub.swift; sourceTree = "<group>"; };
 		CB045F1F24981BA1003AA058 /* LoginRoutableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoutableTests.swift; sourceTree = "<group>"; };
 		CB045F2224981CE7003AA058 /* LoginRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterTests.swift; sourceTree = "<group>"; };
+		CB045F25249820C0003AA058 /* LoginViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTests.swift; sourceTree = "<group>"; };
+		CB045F2824982148003AA058 /* LoginViewModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelStub.swift; sourceTree = "<group>"; };
+		CB045F2B249821A3003AA058 /* LoginRouterStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterStub.swift; sourceTree = "<group>"; };
+		CB045F2D2498220B003AA058 /* RootViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewTests.swift; sourceTree = "<group>"; };
+		CB045F2F24982259003AA058 /* RootRouterStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouterStub.swift; sourceTree = "<group>"; };
+		CB045F3124982290003AA058 /* RootViewModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +298,7 @@
 		CB045F16249816C4003AA058 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
+				CB045F24249820B3003AA058 /* View */,
 				CB045F17249816FA003AA058 /* Routable */,
 				CB045F2124981CD4003AA058 /* Router */,
 			);
@@ -305,6 +318,8 @@
 			isa = PBXGroup;
 			children = (
 				CB045F1B2498178C003AA058 /* Sesssion */,
+				CB045F2A24982195003AA058 /* Router */,
+				CB045F272498213C003AA058 /* ViewModel */,
 			);
 			path = Doubles;
 			sourceTree = "<group>";
@@ -321,6 +336,33 @@
 			isa = PBXGroup;
 			children = (
 				CB045F2224981CE7003AA058 /* LoginRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CB045F24249820B3003AA058 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB045F2D2498220B003AA058 /* RootViewTests.swift */,
+				CB045F25249820C0003AA058 /* LoginViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB045F272498213C003AA058 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB045F2824982148003AA058 /* LoginViewModelStub.swift */,
+				CB045F3124982290003AA058 /* RootViewModelStub.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB045F2A24982195003AA058 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CB045F2F24982259003AA058 /* RootRouterStub.swift */,
+				CB045F2B249821A3003AA058 /* LoginRouterStub.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -456,10 +498,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB045F2E2498220B003AA058 /* RootViewTests.swift in Sources */,
 				CB045F1E2498179A003AA058 /* SessionStub.swift in Sources */,
+				CB045F26249820C0003AA058 /* LoginViewTests.swift in Sources */,
 				CB045F2024981BA1003AA058 /* LoginRoutableTests.swift in Sources */,
+				CB045F3224982290003AA058 /* RootViewModelStub.swift in Sources */,
 				CB045F2324981CE7003AA058 /* LoginRouterTests.swift in Sources */,
+				CB045F2924982148003AA058 /* LoginViewModelStub.swift in Sources */,
+				CB045F2C249821A3003AA058 /* LoginRouterStub.swift in Sources */,
 				CB045F1924981760003AA058 /* RootRoutableTests.swift in Sources */,
+				CB045F3024982259003AA058 /* RootRouterStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
