@@ -32,7 +32,8 @@
 		CB045EFD2497D1A1003AA058 /* LoginViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EFC2497D1A1003AA058 /* LoginViewModelProtocol.swift */; };
 		CB045EFF2497D1A9003AA058 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EFE2497D1A9003AA058 /* LoginViewModel.swift */; };
 		CB045F032497DE61003AA058 /* SceneAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F022497DE61003AA058 /* SceneAppRouter.swift */; };
-		CB045F0D2497E25B003AA058 /* mvvm_base_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F0C2497E25B003AA058 /* mvvm_base_tests.swift */; };
+		CB045F1924981760003AA058 /* RootRoutableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F1824981760003AA058 /* RootRoutableTests.swift */; };
+		CB045F1E2498179A003AA058 /* SessionStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F1D2498179A003AA058 /* SessionStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +75,9 @@
 		CB045EFE2497D1A9003AA058 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CB045F022497DE61003AA058 /* SceneAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneAppRouter.swift; sourceTree = "<group>"; };
 		CB045F0A2497E25B003AA058 /* mvvm-base-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mvvm-base-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB045F0C2497E25B003AA058 /* mvvm_base_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvvm_base_tests.swift; sourceTree = "<group>"; };
 		CB045F0E2497E25B003AA058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB045F1824981760003AA058 /* RootRoutableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRoutableTests.swift; sourceTree = "<group>"; };
+		CB045F1D2498179A003AA058 /* SessionStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,10 +272,43 @@
 		CB045F0B2497E25B003AA058 /* mvvm-base-tests */ = {
 			isa = PBXGroup;
 			children = (
-				CB045F0C2497E25B003AA058 /* mvvm_base_tests.swift */,
+				CB045F1A24981784003AA058 /* Doubles */,
+				CB045F16249816C4003AA058 /* Unit */,
 				CB045F0E2497E25B003AA058 /* Info.plist */,
 			);
 			path = "mvvm-base-tests";
+			sourceTree = "<group>";
+		};
+		CB045F16249816C4003AA058 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				CB045F17249816FA003AA058 /* Routable */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		CB045F17249816FA003AA058 /* Routable */ = {
+			isa = PBXGroup;
+			children = (
+				CB045F1824981760003AA058 /* RootRoutableTests.swift */,
+			);
+			path = Routable;
+			sourceTree = "<group>";
+		};
+		CB045F1A24981784003AA058 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				CB045F1B2498178C003AA058 /* Sesssion */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		CB045F1B2498178C003AA058 /* Sesssion */ = {
+			isa = PBXGroup;
+			children = (
+				CB045F1D2498179A003AA058 /* SessionStub.swift */,
+			);
+			path = Sesssion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +364,7 @@
 					};
 					CB045F092497E25B003AA058 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = CB045EAF2497C740003AA058;
 					};
 				};
@@ -406,7 +442,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB045F0D2497E25B003AA058 /* mvvm_base_tests.swift in Sources */,
+				CB045F1E2498179A003AA058 /* SessionStub.swift in Sources */,
+				CB045F1924981760003AA058 /* RootRoutableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K5PT2A5VQ;
 				INFOPLIST_FILE = "mvvm-base-tests/Info.plist";
@@ -598,6 +636,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pw.tereshkov.mvvm-base-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvvm-base.app/mvvm-base";
@@ -608,6 +647,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K5PT2A5VQ;
 				INFOPLIST_FILE = "mvvm-base-tests/Info.plist";
