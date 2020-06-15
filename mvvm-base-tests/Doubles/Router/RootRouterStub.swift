@@ -11,4 +11,10 @@ import Foundation
 
 class RootRouterStub: BaseRouter, RootRouterProtocol {
     
+    var goToLoginCalled: Bool = false
+    
+    func goToLogin(animated: Bool) {
+        self.goToLoginCalled = true
+    }
+    
 }

@@ -42,6 +42,9 @@
 		CB045F2E2498220B003AA058 /* RootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F2D2498220B003AA058 /* RootViewTests.swift */; };
 		CB045F3024982259003AA058 /* RootRouterStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F2F24982259003AA058 /* RootRouterStub.swift */; };
 		CB045F3224982290003AA058 /* RootViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F3124982290003AA058 /* RootViewModelStub.swift */; };
+		CB045F35249823A7003AA058 /* RootViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F34249823A7003AA058 /* RootViewModelTests.swift */; };
+		CB045F3724982426003AA058 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F3624982426003AA058 /* LoginViewModelTests.swift */; };
+		CB045F3A249824B5003AA058 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F39249824B5003AA058 /* AppRouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,9 @@
 		CB045F2D2498220B003AA058 /* RootViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewTests.swift; sourceTree = "<group>"; };
 		CB045F2F24982259003AA058 /* RootRouterStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouterStub.swift; sourceTree = "<group>"; };
 		CB045F3124982290003AA058 /* RootViewModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelStub.swift; sourceTree = "<group>"; };
+		CB045F34249823A7003AA058 /* RootViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelTests.swift; sourceTree = "<group>"; };
+		CB045F3624982426003AA058 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		CB045F39249824B5003AA058 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,9 +304,11 @@
 		CB045F16249816C4003AA058 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
-				CB045F24249820B3003AA058 /* View */,
-				CB045F17249816FA003AA058 /* Routable */,
+				CB045F38249824AC003AA058 /* Core */,
 				CB045F2124981CD4003AA058 /* Router */,
+				CB045F17249816FA003AA058 /* Routable */,
+				CB045F24249820B3003AA058 /* View */,
+				CB045F3324982390003AA058 /* ViewModel */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -365,6 +373,23 @@
 				CB045F2B249821A3003AA058 /* LoginRouterStub.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		CB045F3324982390003AA058 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB045F34249823A7003AA058 /* RootViewModelTests.swift */,
+				CB045F3624982426003AA058 /* LoginViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB045F38249824AC003AA058 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CB045F39249824B5003AA058 /* AppRouterTests.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB045F3724982426003AA058 /* LoginViewModelTests.swift in Sources */,
 				CB045F2E2498220B003AA058 /* RootViewTests.swift in Sources */,
 				CB045F1E2498179A003AA058 /* SessionStub.swift in Sources */,
 				CB045F26249820C0003AA058 /* LoginViewTests.swift in Sources */,
@@ -505,9 +531,11 @@
 				CB045F3224982290003AA058 /* RootViewModelStub.swift in Sources */,
 				CB045F2324981CE7003AA058 /* LoginRouterTests.swift in Sources */,
 				CB045F2924982148003AA058 /* LoginViewModelStub.swift in Sources */,
+				CB045F35249823A7003AA058 /* RootViewModelTests.swift in Sources */,
 				CB045F2C249821A3003AA058 /* LoginRouterStub.swift in Sources */,
 				CB045F1924981760003AA058 /* RootRoutableTests.swift in Sources */,
 				CB045F3024982259003AA058 /* RootRouterStub.swift in Sources */,
+				CB045F3A249824B5003AA058 /* AppRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
