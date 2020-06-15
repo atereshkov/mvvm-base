@@ -34,6 +34,7 @@
 		CB045F032497DE61003AA058 /* SceneAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F022497DE61003AA058 /* SceneAppRouter.swift */; };
 		CB045F1924981760003AA058 /* RootRoutableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F1824981760003AA058 /* RootRoutableTests.swift */; };
 		CB045F1E2498179A003AA058 /* SessionStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F1D2498179A003AA058 /* SessionStub.swift */; };
+		CB045F2024981BA1003AA058 /* LoginRoutableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F1F24981BA1003AA058 /* LoginRoutableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		CB045F0E2497E25B003AA058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB045F1824981760003AA058 /* RootRoutableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRoutableTests.swift; sourceTree = "<group>"; };
 		CB045F1D2498179A003AA058 /* SessionStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStub.swift; sourceTree = "<group>"; };
+		CB045F1F24981BA1003AA058 /* LoginRoutableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoutableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				CB045F1824981760003AA058 /* RootRoutableTests.swift */,
+				CB045F1F24981BA1003AA058 /* LoginRoutableTests.swift */,
 			);
 			path = Routable;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB045F1E2498179A003AA058 /* SessionStub.swift in Sources */,
+				CB045F2024981BA1003AA058 /* LoginRoutableTests.swift in Sources */,
 				CB045F1924981760003AA058 /* RootRoutableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
