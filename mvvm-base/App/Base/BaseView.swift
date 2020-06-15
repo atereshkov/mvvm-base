@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BaseView.swift
 //  mvvm-base
 //
 //  Created by nb-058-41b on 6/15/20.
@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+typealias ViewType = UIViewController
 
+class BaseView<ViewModel: ViewModelType>: ViewType {
+    
+    var viewModel: ViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    func bindViewModel() {}
+    
 }
-

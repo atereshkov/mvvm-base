@@ -9,21 +9,57 @@
 /* Begin PBXBuildFile section */
 		CB045EB42497C740003AA058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EB32497C740003AA058 /* AppDelegate.swift */; };
 		CB045EB62497C740003AA058 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EB52497C740003AA058 /* SceneDelegate.swift */; };
-		CB045EB82497C740003AA058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EB72497C740003AA058 /* ViewController.swift */; };
-		CB045EBB2497C740003AA058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB045EB92497C740003AA058 /* Main.storyboard */; };
 		CB045EBD2497C741003AA058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB045EBC2497C741003AA058 /* Assets.xcassets */; };
 		CB045EC02497C741003AA058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB045EBE2497C741003AA058 /* LaunchScreen.storyboard */; };
+		CB045ECA2497C86D003AA058 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EC92497C86D003AA058 /* SessionType.swift */; };
+		CB045ECD2497C8DE003AA058 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045ECC2497C8DE003AA058 /* BaseRouter.swift */; };
+		CB045ECF2497C8FF003AA058 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045ECE2497C8FF003AA058 /* BaseView.swift */; };
+		CB045ED12497C91B003AA058 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045ED02497C91B003AA058 /* ViewModelType.swift */; };
+		CB045ED32497C92F003AA058 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045ED22497C92F003AA058 /* BaseViewModel.swift */; };
+		CB045ED62497CA6E003AA058 /* AppRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045ED52497CA6E003AA058 /* AppRouterProtocol.swift */; };
+		CB045ED82497CA8B003AA058 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045ED72497CA8B003AA058 /* AppRouter.swift */; };
+		CB045EDA2497CB56003AA058 /* DummySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045ED92497CB56003AA058 /* DummySession.swift */; };
+		CB045EE92497CF6F003AA058 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EE82497CF6F003AA058 /* RootRouter.swift */; };
+		CB045EEB2497CF78003AA058 /* RootRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EEA2497CF78003AA058 /* RootRoutable.swift */; };
+		CB045EED2497CF80003AA058 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EEC2497CF80003AA058 /* RootView.swift */; };
+		CB045EEF2497CF89003AA058 /* RootView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB045EEE2497CF89003AA058 /* RootView.storyboard */; };
+		CB045EF12497CF94003AA058 /* RootViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EF02497CF94003AA058 /* RootViewModelProtocol.swift */; };
+		CB045EF32497CFA1003AA058 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EF22497CFA1003AA058 /* RootViewModel.swift */; };
+		CB045EF52497D183003AA058 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EF42497D183003AA058 /* LoginRouter.swift */; };
+		CB045EF72497D189003AA058 /* LoginRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EF62497D189003AA058 /* LoginRoutable.swift */; };
+		CB045EF92497D190003AA058 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EF82497D190003AA058 /* LoginView.swift */; };
+		CB045EFB2497D196003AA058 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB045EFA2497D196003AA058 /* LoginView.storyboard */; };
+		CB045EFD2497D1A1003AA058 /* LoginViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EFC2497D1A1003AA058 /* LoginViewModelProtocol.swift */; };
+		CB045EFF2497D1A9003AA058 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EFE2497D1A9003AA058 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB045EB02497C740003AA058 /* mvvm-base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvvm-base.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB045EB32497C740003AA058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB045EB52497C740003AA058 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB045EB72497C740003AA058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB045EBA2497C740003AA058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB045EBC2497C741003AA058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB045EBF2497C741003AA058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB045EC12497C741003AA058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB045EC92497C86D003AA058 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
+		CB045ECC2497C8DE003AA058 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		CB045ECE2497C8FF003AA058 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		CB045ED02497C91B003AA058 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		CB045ED22497C92F003AA058 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		CB045ED52497CA6E003AA058 /* AppRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterProtocol.swift; sourceTree = "<group>"; };
+		CB045ED72497CA8B003AA058 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		CB045ED92497CB56003AA058 /* DummySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySession.swift; sourceTree = "<group>"; };
+		CB045EE82497CF6F003AA058 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		CB045EEA2497CF78003AA058 /* RootRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRoutable.swift; sourceTree = "<group>"; };
+		CB045EEC2497CF80003AA058 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CB045EEE2497CF89003AA058 /* RootView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootView.storyboard; sourceTree = "<group>"; };
+		CB045EF02497CF94003AA058 /* RootViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelProtocol.swift; sourceTree = "<group>"; };
+		CB045EF22497CFA1003AA058 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		CB045EF42497D183003AA058 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		CB045EF62497D189003AA058 /* LoginRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoutable.swift; sourceTree = "<group>"; };
+		CB045EF82497D190003AA058 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CB045EFA2497D196003AA058 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
+		CB045EFC2497D1A1003AA058 /* LoginViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelProtocol.swift; sourceTree = "<group>"; };
+		CB045EFE2497D1A9003AA058 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +92,137 @@
 		CB045EB22497C740003AA058 /* mvvm-base */ = {
 			isa = PBXGroup;
 			children = (
-				CB045EB32497C740003AA058 /* AppDelegate.swift */,
-				CB045EB52497C740003AA058 /* SceneDelegate.swift */,
-				CB045EB72497C740003AA058 /* ViewController.swift */,
-				CB045EB92497C740003AA058 /* Main.storyboard */,
+				CB045EC72497C7AC003AA058 /* App */,
+				CB045EDB2497CCBE003AA058 /* UI */,
 				CB045EBC2497C741003AA058 /* Assets.xcassets */,
 				CB045EBE2497C741003AA058 /* LaunchScreen.storyboard */,
 				CB045EC12497C741003AA058 /* Info.plist */,
 			);
 			path = "mvvm-base";
+			sourceTree = "<group>";
+		};
+		CB045EC72497C7AC003AA058 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CB045EB32497C740003AA058 /* AppDelegate.swift */,
+				CB045EB52497C740003AA058 /* SceneDelegate.swift */,
+				CB045EC82497C864003AA058 /* Core */,
+				CB045ECB2497C875003AA058 /* Base */,
+				CB045ED42497CA5F003AA058 /* Router */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CB045EC82497C864003AA058 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CB045EC92497C86D003AA058 /* SessionType.swift */,
+				CB045ED92497CB56003AA058 /* DummySession.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CB045ECB2497C875003AA058 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CB045ECC2497C8DE003AA058 /* BaseRouter.swift */,
+				CB045ECE2497C8FF003AA058 /* BaseView.swift */,
+				CB045ED22497C92F003AA058 /* BaseViewModel.swift */,
+				CB045ED02497C91B003AA058 /* ViewModelType.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CB045ED42497CA5F003AA058 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CB045ED52497CA6E003AA058 /* AppRouterProtocol.swift */,
+				CB045ED72497CA8B003AA058 /* AppRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CB045EDB2497CCBE003AA058 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CB045EE42497CF4E003AA058 /* Root */,
+				CB045EDC2497CCFC003AA058 /* Login */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CB045EDC2497CCFC003AA058 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CB045EDE2497CEF3003AA058 /* Router */,
+				CB045EDF2497CEFF003AA058 /* View */,
+				CB045EE02497CF09003AA058 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CB045EDE2497CEF3003AA058 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CB045EF42497D183003AA058 /* LoginRouter.swift */,
+				CB045EF62497D189003AA058 /* LoginRoutable.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CB045EDF2497CEFF003AA058 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB045EF82497D190003AA058 /* LoginView.swift */,
+				CB045EFA2497D196003AA058 /* LoginView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB045EE02497CF09003AA058 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB045EFC2497D1A1003AA058 /* LoginViewModelProtocol.swift */,
+				CB045EFE2497D1A9003AA058 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB045EE42497CF4E003AA058 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				CB045EE72497CF5B003AA058 /* Router */,
+				CB045EE62497CF57003AA058 /* View */,
+				CB045EE52497CF54003AA058 /* ViewModel */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		CB045EE52497CF54003AA058 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB045EF02497CF94003AA058 /* RootViewModelProtocol.swift */,
+				CB045EF22497CFA1003AA058 /* RootViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB045EE62497CF57003AA058 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB045EEC2497CF80003AA058 /* RootView.swift */,
+				CB045EEE2497CF89003AA058 /* RootView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB045EE72497CF5B003AA058 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CB045EE82497CF6F003AA058 /* RootRouter.swift */,
+				CB045EEA2497CF78003AA058 /* RootRoutable.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +283,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB045EEF2497CF89003AA058 /* RootView.storyboard in Resources */,
 				CB045EC02497C741003AA058 /* LaunchScreen.storyboard in Resources */,
 				CB045EBD2497C741003AA058 /* Assets.xcassets in Resources */,
-				CB045EBB2497C740003AA058 /* Main.storyboard in Resources */,
+				CB045EFB2497D196003AA058 /* LoginView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +297,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB045EB82497C740003AA058 /* ViewController.swift in Sources */,
+				CB045EF12497CF94003AA058 /* RootViewModelProtocol.swift in Sources */,
+				CB045EFD2497D1A1003AA058 /* LoginViewModelProtocol.swift in Sources */,
+				CB045EF72497D189003AA058 /* LoginRoutable.swift in Sources */,
 				CB045EB42497C740003AA058 /* AppDelegate.swift in Sources */,
+				CB045ECD2497C8DE003AA058 /* BaseRouter.swift in Sources */,
+				CB045ECF2497C8FF003AA058 /* BaseView.swift in Sources */,
+				CB045ED62497CA6E003AA058 /* AppRouterProtocol.swift in Sources */,
+				CB045ECA2497C86D003AA058 /* SessionType.swift in Sources */,
+				CB045EFF2497D1A9003AA058 /* LoginViewModel.swift in Sources */,
+				CB045EF52497D183003AA058 /* LoginRouter.swift in Sources */,
+				CB045ED32497C92F003AA058 /* BaseViewModel.swift in Sources */,
 				CB045EB62497C740003AA058 /* SceneDelegate.swift in Sources */,
+				CB045EEB2497CF78003AA058 /* RootRoutable.swift in Sources */,
+				CB045ED82497CA8B003AA058 /* AppRouter.swift in Sources */,
+				CB045EF92497D190003AA058 /* LoginView.swift in Sources */,
+				CB045EF32497CFA1003AA058 /* RootViewModel.swift in Sources */,
+				CB045EED2497CF80003AA058 /* RootView.swift in Sources */,
+				CB045EE92497CF6F003AA058 /* RootRouter.swift in Sources */,
+				CB045EDA2497CB56003AA058 /* DummySession.swift in Sources */,
+				CB045ED12497C91B003AA058 /* ViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB045EB92497C740003AA058 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB045EBA2497C740003AA058 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB045EBE2497C741003AA058 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
