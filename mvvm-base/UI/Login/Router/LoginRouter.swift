@@ -17,7 +17,7 @@ protocol LoginRouterProtocol: RouterType {
 final class LoginRouter: BaseRouter, LoginRouterProtocol {
     
     func dismiss(animated: Bool) {
-        self.view?.navigationController?.popViewController(animated: true)
+        self.view?.navigationController?.popViewController(animated: animated)
     }
     
 }
