@@ -32,7 +32,18 @@
 		CB045EFD2497D1A1003AA058 /* LoginViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EFC2497D1A1003AA058 /* LoginViewModelProtocol.swift */; };
 		CB045EFF2497D1A9003AA058 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045EFE2497D1A9003AA058 /* LoginViewModel.swift */; };
 		CB045F032497DE61003AA058 /* SceneAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F022497DE61003AA058 /* SceneAppRouter.swift */; };
+		CB045F0D2497E25B003AA058 /* mvvm_base_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB045F0C2497E25B003AA058 /* mvvm_base_tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB045F0F2497E25B003AA058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB045EA82497C740003AA058 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB045EAF2497C740003AA058;
+			remoteInfo = "mvvm-base";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CB045EB02497C740003AA058 /* mvvm-base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvvm-base.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,10 +73,20 @@
 		CB045EFC2497D1A1003AA058 /* LoginViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelProtocol.swift; sourceTree = "<group>"; };
 		CB045EFE2497D1A9003AA058 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CB045F022497DE61003AA058 /* SceneAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneAppRouter.swift; sourceTree = "<group>"; };
+		CB045F0A2497E25B003AA058 /* mvvm-base-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mvvm-base-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB045F0C2497E25B003AA058 /* mvvm_base_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvvm_base_tests.swift; sourceTree = "<group>"; };
+		CB045F0E2497E25B003AA058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CB045EAD2497C740003AA058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB045F072497E25B003AA058 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				CB045EB22497C740003AA058 /* mvvm-base */,
+				CB045F0B2497E25B003AA058 /* mvvm-base-tests */,
 				CB045EB12497C740003AA058 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				CB045EB02497C740003AA058 /* mvvm-base.app */,
+				CB045F0A2497E25B003AA058 /* mvvm-base-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,6 +267,15 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		CB045F0B2497E25B003AA058 /* mvvm-base-tests */ = {
+			isa = PBXGroup;
+			children = (
+				CB045F0C2497E25B003AA058 /* mvvm_base_tests.swift */,
+				CB045F0E2497E25B003AA058 /* Info.plist */,
+			);
+			path = "mvvm-base-tests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +296,24 @@
 			productReference = CB045EB02497C740003AA058 /* mvvm-base.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CB045F092497E25B003AA058 /* mvvm-base-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB045F112497E25B003AA058 /* Build configuration list for PBXNativeTarget "mvvm-base-tests" */;
+			buildPhases = (
+				CB045F062497E25B003AA058 /* Sources */,
+				CB045F072497E25B003AA058 /* Frameworks */,
+				CB045F082497E25B003AA058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB045F102497E25B003AA058 /* PBXTargetDependency */,
+			);
+			name = "mvvm-base-tests";
+			productName = "mvvm-base-tests";
+			productReference = CB045F0A2497E25B003AA058 /* mvvm-base-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -276,6 +326,10 @@
 				TargetAttributes = {
 					CB045EAF2497C740003AA058 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					CB045F092497E25B003AA058 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CB045EAF2497C740003AA058;
 					};
 				};
 			};
@@ -293,6 +347,7 @@
 			projectRoot = "";
 			targets = (
 				CB045EAF2497C740003AA058 /* mvvm-base */,
+				CB045F092497E25B003AA058 /* mvvm-base-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,6 +361,13 @@
 				CB045EC02497C741003AA058 /* LaunchScreen.storyboard in Resources */,
 				CB045EBD2497C741003AA058 /* Assets.xcassets in Resources */,
 				CB045EFB2497D196003AA058 /* LoginView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB045F082497E25B003AA058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +402,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB045F062497E25B003AA058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB045F0D2497E25B003AA058 /* mvvm_base_tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB045F102497E25B003AA058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB045EAF2497C740003AA058 /* mvvm-base */;
+			targetProxy = CB045F0F2497E25B003AA058 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB045EBE2497C741003AA058 /* LaunchScreen.storyboard */ = {
@@ -506,6 +584,46 @@
 			};
 			name = Release;
 		};
+		CB045F122497E25B003AA058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K5PT2A5VQ;
+				INFOPLIST_FILE = "mvvm-base-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pw.tereshkov.mvvm-base-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvvm-base.app/mvvm-base";
+			};
+			name = Debug;
+		};
+		CB045F132497E25B003AA058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K5PT2A5VQ;
+				INFOPLIST_FILE = "mvvm-base-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pw.tereshkov.mvvm-base-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvvm-base.app/mvvm-base";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,6 +641,15 @@
 			buildConfigurations = (
 				CB045EC52497C741003AA058 /* Debug */,
 				CB045EC62497C741003AA058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB045F112497E25B003AA058 /* Build configuration list for PBXNativeTarget "mvvm-base-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB045F122497E25B003AA058 /* Debug */,
+				CB045F132497E25B003AA058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
