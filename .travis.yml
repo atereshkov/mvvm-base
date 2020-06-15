@@ -1,0 +1,13 @@
+language: swift
+os: osx
+osx_image: xcode11.3
+xcode_project: mvvm-base.xcodeproj
+xcode_scheme: mvvm-base
+xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11
+
+branches:
+  only:
+  - master
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -J 'mvvm-base'
